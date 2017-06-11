@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Standard Deviation Calculation</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<form class="col col-sm-2 data">
+	<h4>Enter your data here:</h4>
+	<br>
+	<div class="form-group">
+	  <label><h4>Data 1</h4></label>
+	  <input type="text" class="form-control" id="data1">
+	</div>
+</form>
+
+<form class="col col-sm-1 x-difference">
+	<h4>x - x&#772:</h4>
+	<br>
+	<div class="form-group">
+	  <label><h4>Result</h4></label>
+	  <input type="text" class="form-control" id="x-dif1">
+	</div>
+</form>
+
+<form class="col col-sm-1 x-dif-squared">
+	<h4>(x - x&#772;)<sup>2</sup>:</h4>
+	<br>
+	<div class="form-group">
+	  <label><h4>Result</h4></label>
+	  <input type="text" class="form-control" id="x-dif-squared1">
+	</div>
+</form>
+
+<form class="col col-sm-1 z-scores">
+	<h4>z-scores:</h4>
+	<br>
+	<div class="form-group">
+	  <label><h4>Result</h4></label>
+	  <input type="text" class="form-control" id="z-score1">
+	</div>
+</form>
+
+<form class="col col-sm-2">
+	<h4>Rows: <span id="row-num">1</span></h4>
+	<h4>Mean: <span id="mean">0</span></h4>
+	<h4>&sum;(x - x&#772;)<sup>2</sup>: <span id="sum-of-x-squares">0</span></h4>
+	<h4>Variance S<sup>2</sup>: <span id="s2">0</span></h4>
+	<h4>Standard Deviation: <span id="sd">0</span></h4>
+	<h4>Alert: <span id="alert">None</span></h4>
+</form>
+
+<div class="col buttons col-sm-1">
+	<br>
+	<button class="btn btn-success btn-md" onclick="add_row()">Add a Row</button>
+	<button class="btn btn-primary btn-md" onclick="calculate()">Calculate</button>
+	<button class="btn btn-danger btn-md" onclick="delete_row()">Delete a Row</button>
+</div>
+
+ <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
