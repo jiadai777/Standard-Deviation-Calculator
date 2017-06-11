@@ -1,3 +1,3 @@
 # Standard-Deviation-Calculator
 
-## Calculate standard deviattion based on data inputs
+## Calculate standard deviation based on data inputs
